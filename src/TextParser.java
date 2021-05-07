@@ -9,7 +9,9 @@ public class TextParser {
 	
 	private final static JFileChooser fc = new JFileChooser(FILE_CHOOSER_DEFAULT_LOCATION);
 	
-	public static File openFileSelector() {}
+	public static File openFileSelector() {
+		
+	}
 	
 	public static Map<Character, Integer> parseFile(File file) throws IOException {}
 	
