@@ -10,14 +10,17 @@ import java.util.Scanner;
 public class Histogram {
 	public static void main(String[] args) throws FileNotFoundException
     {
-		File inputFile = new File ("C:\\Users\\alexj\\Desktop\\HTW\\#2 Module_sem2\\Labs\\Lab4\\TextFiles\\Lorem3.txt");
+		String inputFileName = "Input1.txt";
+		File inputFile = new File (inputFileName);
 		Scanner in = new Scanner(inputFile);
 		in.useDelimiter("");
 		
 		Map<Character, Integer> charMap = new HashMap<Character, Integer>();
 		
 		//PrintWriter
-		PrintWriter out = new PrintWriter("C:\\Users\\alexj\\Desktop\\HTW\\#2 Module_sem2\\Labs\\Lab4\\TextFiles\\Output.txt");		
+		String outputFileName = "Frequency.txt";
+		File outputFile = new File (outputFileName);
+		PrintWriter out = new PrintWriter(outputFile);		
 		
 		//Put Alphabet into Hashmap
 		for(char cha= 'A'; cha<='Z'; cha++) {
